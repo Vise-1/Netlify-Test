@@ -4,7 +4,7 @@ import Button from './components/Button'
 import { useState } from 'react';
 
 function App(){
-  let items = ["Japan", "Europe", "Asia", "America", "Northpole"];
+  let items = ["This", "is", "A", "Server", "Test"];
 
   const [alertVisible, setAlertVisibility] = useState(false);
   
@@ -14,7 +14,7 @@ function App(){
   
   return (
   <div>
-    <ListGroup items={items} heading='Country List' onSelectItem={handleSelectItem}></ListGroup>
+    <ListGroup items={items} heading='Random AHH List' onSelectItem={handleSelectItem}></ListGroup>
     {alertVisible && <Alert onClose={()=> setAlertVisibility(false)}>BITCH</Alert>}
     <Button onClick={()=> setAlertVisibility(true)}>wassupp GAMERSS!! </Button>
   </div>);
